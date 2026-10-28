@@ -11,7 +11,7 @@ Le programme recherche la position d'une sous-image dans une image. Il existe en
 
 ![Recherche de la chèvre dans l'image jungle, découpée en 4 bandes](parallelisme.gif)
 
-*Visualisation du découpage : l'image est partagée en 4 bandes de lignes, une par processus (P0 à P3), comme dans la version MPI. Chaque processus calcule la somme des carrés des différences (SSD) pour toutes les positions de sa bande ; la carte de chaleur montre les positions les plus ressemblantes, et le cadre rouge la position retenue après la réduction du minimum. Les valeurs de SSD sont celles calculées par le programme ; l'animation a été générée à partir de ces valeurs.*
+*Visualisation du découpage : l'image est partagée en 4 bandes de lignes, une par processus (P0 à P3), comme dans la version MPI. Chaque processus calcule la somme des carrés des différences (SSD) pour toutes les positions de sa bande ; la carte de chaleur montre les positions les plus ressemblantes, et le cadre rouge la position retenue après la réduction du minimum. L'animation a été générée à part, avec la même formule de SSD que le programme ; elle trouve la même position que lui.*
 
 ![Temps d'exécution](temps_execution.png)
 
